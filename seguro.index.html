@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EventFlow - Login</title>
+  <link rel="stylesheet" href="seguro.style.css" />
+  <script src="seguro.script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>EventFlow</h1>
+    <p>Sua loja de eventos com segurança e facilidade</p>
+    
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" autocomplete="email" required />
+
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" autocomplete="current-password" required />
+
+      <button type="submit">Entrar</button>
+      <p id="errorMsg"></p>
+    </form>
+    
+    <a href="seguro.recuperar.html">Esqueceu a senha?</a>
+  </div>
+</body>
+</html>
