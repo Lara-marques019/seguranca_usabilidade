@@ -1,57 +1,57 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f1faee; /* cor clara */
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif; /* Define a fonte padrão como Arial, com fallback genérico sans-serif */
+  background-color: #f1faee; /* Cor de fundo clara para manter o contraste suave */
+  margin: 0; /* Remove as margens padrão do navegador */
+  padding: 0; /* Remove os espaçamentos internos padrão */
 }
 
 .container {
-  width: 300px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #a8dadc; /* cor suave */
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 300px; /* Largura fixa para o formulário */
+  margin: 50px auto; /* Centraliza horizontalmente com 50px de margem superior e inferior */
+  padding: 20px; /* Espaçamento interno */
+  background-color: #a8dadc; /* Fundo suave azul-claro */
+  border-radius: 10px; /* Bordas arredondadas para suavizar o design */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra discreta para destacar o container do fundo */
 }
 
 h1, h2 {
-  text-align: center;
-  color: #457b9d; /* cor mais escura */
+  text-align: center; /* Centraliza os títulos */
+  color: #457b9d; /* Cor mais escura para destacar os títulos */
 }
 
 label {
-  display: block;
-  margin-top: 10px;
-  color: #457b9d;
+  display: block; /* Exibe os rótulos em blocos, forçando quebra de linha */
+  margin-top: 10px; /* Espaço acima de cada rótulo */
+  color: #457b9d; /* Cor consistente com os títulos */
 }
 
 input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #457b9d;
-  border-radius: 5px;
+  width: 100%; /* Ocupa toda a largura do container */
+  padding: 8px; /* Espaçamento interno para conforto na digitação */
+  margin-top: 5px; /* Espaço entre o label e o input */
+  border: 1px solid #457b9d; /* Borda na mesma cor do tema */
+  border-radius: 5px; /* Bordas arredondadas */
 }
 
 button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 15px;
-  background-color: #457b9d;
-  color: #f1faee;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  width: 100%; /* Ocupa toda a largura */
+  padding: 10px; /* Aumenta área de clique */
+  margin-top: 15px; /* Espaço acima do botão */
+  background-color: #457b9d; /* Cor de fundo azul escuro */
+  color: #f1faee; /* Texto branco (ou quase) para contraste */
+  border: none; /* Remove borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Indica que é clicável */
 }
 
 button:hover {
-  background-color: #365f7d;
+  background-color: #365f7d; /* Muda a cor de fundo ao passar o mouse para reforçar a interatividade */
 }
 
 footer {
-  text-align: center;
-  margin-top: 20px;
-  color: #457b9d;
+  text-align: center; /* Centraliza o texto no rodapé */
+  margin-top: 20px; /* Espaço acima do rodapé */
+  color: #457b9d; /* Mantém a consistência de cor */
 }
 
 

@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EventFlow - Login</title>
-  <link rel="stylesheet" href="seguro.style.css" />
-  <script src="seguro.script.js" defer></script>
+  <meta charset="UTF-8" /> <!-- Define a codificação de caracteres como UTF-8, padrão universal -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsividade para dispositivos móveis -->
+  <title>EventFlow - Login</title> <!-- Título da aba do navegador -->
+
+  <!-- Linka o arquivo de estilos CSS que melhora a usabilidade e aparência -->
+  <link rel="stylesheet" href="seguro.style.css" /> 
+
+  <!-- Linka o arquivo JavaScript para a parte funcional e segura do sistema -->
+  <script src="seguro.script.js" defer></script> 
 </head>
+
 <body>
-  <div class="container">
-    <img src="download.png" alt="Logo EventFlow" class="logo" />
-    <!-- <h1>EventFlow</h1> --> <!-- Removido para não duplicar o nome -->
+  <div class="container"> <!-- Div principal que centraliza e estiliza todo o conteúdo -->
+
+    <img src="download.png" alt="Logo EventFlow" class="logo" /> 
+    <!-- Imagem da logo colocada no topo. Alt importante para acessibilidade -->
+
+    <!-- <h1>EventFlow</h1> --> 
+    <!-- Comentado para evitar duplicação, já que a logo visualmente já representa a marca -->
 
     <p>Sua loja de eventos com segurança e facilidade em suas compras.</p>
-    
-    <h2>Login</h2>
-    <form id="loginForm">
+    <!-- Pequena descrição institucional -->
+
+    <h2>Login</h2> <!-- Título do formulário -->
+
+    <form id="loginForm"> <!-- Formulário de login com ID para manipulação via JS -->
+      
       <label for="email">E-mail:</label>
       <input type="email" id="email" name="email" autocomplete="email" required />
+      <!-- Campo de e-mail, com validação automática e preenchimento seguro -->
 
       <label for="password">Senha:</label>
       <input type="password" id="password" name="password" autocomplete="current-password" required />
+      <!-- Campo de senha com ocultação de caracteres e preenchimento automático seguro -->
 
       <button type="submit">Entrar</button>
+      <!-- Botão para envio do formulário -->
+
       <p id="errorMsg"></p>
+      <!-- Espaço reservado para exibir mensagens de erro via JS -->
     </form>
-    
+
     <a href="seguro.recuperar.html">Esqueceu a senha?</a>
+    <!-- Link para página de recuperação de senha -->
   </div>
 
   <footer class="rodape">
     <p>© 2008–2025 EventFlow. Todos os direitos reservados.</p>
+    <!-- Rodapé com direitos autorais -->
   </footer>
 </body>
 </html>
+

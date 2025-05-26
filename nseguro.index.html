@@ -1,35 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR"> <!-- Define que o idioma da página é Português do Brasil -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EventFlow - Inseguro</title>
-  <link rel="stylesheet" href="nseguro.style.css">
-  <script src="nseguro.script.js" defer></script>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+  
+  <title>EventFlow - Inseguro</title> <!-- Título da aba do navegador -->
+  
+  <link rel="stylesheet" href="nseguro.style.css"> <!-- Importa o arquivo de estilos CSS -->
+  
+  <script src="nseguro.script.js" defer></script> <!-- Importa o arquivo JavaScript, carregando após o HTML -->
 </head>
+
 <body>
-  <div class="container">
-    <h1>EventFlow</h1>
-    <p>Sua loja de eventos sem segurança adequada!</p>
+  <div class="container"> <!-- Container principal para centralizar o conteúdo -->
+    <h1>EventFlow</h1> <!-- Título principal da página -->
     
-    <h2>Login</h2>
-    <form id="loginForm">
-      <label for="email">E-mail:</label>
-      <input type="text" id="email" name="email"> <!-- Não tem validação de e-mail -->
+    <p>Sua loja de eventos sem segurança adequada!</p> <!-- Mensagem de aviso, neste caso indicando falta de segurança -->
+    
+    <h2>Login</h2> <!-- Título do formulário de login -->
 
-      <label for="password">Senha:</label>
-      <input type="text" id="password" name="password"> <!-- Campo de senha visível -->
+    <form id="loginForm"> <!-- Formulário de login -->
+      <label for="email">E-mail:</label> <!-- Rótulo para o campo de email -->
+      <input type="text" id="email" name="email"> 
+      <!-- Campo de entrada para email, mas: 
+          Não usa type="email", logo não faz validação automática do formato de email. -->
 
-      <button type="submit">Entrar</button>
-      <p id="errorMsg"></p>
+      <label for="password">Senha:</label> <!-- Rótulo para o campo de senha -->
+      <input type="text" id="password" name="password"> 
+      <!--  Erro grave: campo de senha com type="text", deixando a senha visível para qualquer pessoa. 
+           O correto seria type="password" para ocultar os caracteres. -->
+
+      <button type="submit">Entrar</button> <!-- Botão para enviar o formulário -->
+
+      <p id="errorMsg"></p> <!-- Parágrafo para exibir mensagens de erro, mas: 
+            Não possui lógica de validação ou segurança associada ao envio do formulário. -->
     </form>
 
-    <a href="#">Esqueceu a senha?</a> <!-- Link quebrado -->
+    <a href="#">Esqueceu a senha?</a> 
+    <!--  Link quebrado: o href está vazio, então não leva a nenhuma página de recuperação de senha. 
+         Isso prejudica a experiência e a segurança do usuário. -->
   </div>
-
-
 </body>
 </html>
+
 
 <!-- Não usa type="password" para ocultar a senha.
  Não valida email ou senha antes de enviar.

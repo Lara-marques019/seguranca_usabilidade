@@ -2,32 +2,57 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
+  <!-- Define a codificação de caracteres como UTF-8, para suportar acentos e caracteres especiais -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Garante que o layout será responsivo, adaptando-se bem em celulares e tablets -->
+
   <title>Recuperar Senha - EventFlow</title>
+  <!-- Título da aba ou janela do navegador -->
+
   <link rel="stylesheet" href="seguro.style.css" />
+  <!-- Link para o arquivo de estilos CSS, que define as cores, fontes e aparência -->
+
   <script src="seguro.script.js" defer></script>
+  <!-- Link para o arquivo de JavaScript que será executado após o carregamento da página -->
 </head>
+
 <body>
   <div class="container">
+    <!-- Div principal que organiza e centraliza o conteúdo -->
+
     <img src="download.png" alt="Logo EventFlow" class="logo" />
-    
-    
+    <!-- Imagem da logomarca no topo da página. "alt" é importante para acessibilidade -->
+
     <h2>Recuperação de Senha</h2>
-    
+    <!-- Título principal da funcionalidade desta página -->
+
     <form id="recoverForm">
+      <!-- Formulário com o id 'recoverForm', permitindo manipulação via JavaScript -->
+
       <label for="recoveryEmail">E-mail:</label>
+      <!-- Rótulo para o campo de e-mail -->
+
       <input type="email" id="recoveryEmail" required />
-      
+      <!-- Campo para o usuário digitar o e-mail. Tipo "email" adiciona validação automática -->
+      <!-- "required" obriga o preenchimento para envio do formulário -->
+
       <button type="submit">Enviar link de recuperação</button>
+      <!-- Botão que submete o formulário, disparando ação via JavaScript -->
+
       <p id="recoveryMsg"></p>
+      <!-- Parágrafo onde será exibida a mensagem de status ou erro -->
     </form>
-    
+
     <a href="seguro.index.html">Voltar ao login</a>
+    <!-- Link que retorna o usuário à página de login -->
   </div>
 
   <footer>
     <p>© 2009-2025 EventFlow. Todos os direitos reservados.</p>
+    <!-- Rodapé informando os direitos autorais da marca -->
   </footer>
 </body>
 </html>
+
 
