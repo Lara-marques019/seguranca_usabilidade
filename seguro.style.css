@@ -78,6 +78,14 @@ input:focus {
 border-color: #457b9d; /* Muda a cor da borda ao focar */
 }
 
+/*Estilo logo*/
+.logo {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto; /* centraliza e dá espaçamento inferior */
+}
+
 /* Estilos para o botão */
 button {
 margin-top: 20px; /* Espaçamento superior */

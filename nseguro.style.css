@@ -1,45 +1,63 @@
-/* Estilizando o corpo da página */
 body {
-  font-family: sans-serif; /* Fonte simples e legível */
-  display: flex; /* Usa Flexbox para o layout */
-  flex-direction: column; /* Organiza os elementos verticalmente */
-  min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
-  padding: 20px; /* Espaçamento interno em torno do conteúdo */
-  background-color: #f4f4f4; /* Fundo claro e neutro */
+  font-family: Arial, sans-serif;
+  background-color: #f1faee; /* cor clara */
+  margin: 0;
+  padding: 0;
 }
 
-/* Contêiner principal */
 .container {
-  flex: 1; /* Permite que o container cresça e ocupe o espaço disponível */
-  border: 1px solid black; /* Borda preta simples para definição visual */
-  padding: 20px; /* Espaçamento interno */
-  width: 300px; /* Largura fixa para consistência */
-  margin-bottom: 20px; /* Espaço abaixo do container para o rodapé */
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #a8dadc; /* cor suave */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Estilizando os campos de entrada */
+h1, h2 {
+  text-align: center;
+  color: #457b9d; /* cor mais escura */
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #457b9d;
+}
+
 input {
-  display: block; /* Faz com que o input ocupe a linha inteira */
-  margin-bottom: 10px; /* Espaçamento abaixo dos inputs */
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #457b9d;
+  border-radius: 5px;
 }
 
-/* Estilizando o rodapé */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #457b9d;
+  color: #f1faee;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #365f7d;
+}
+
 footer {
-  position: fixed; /* Fixa o rodapé na parte inferior da tela */
-  bottom: 0; /* Alinha o rodapé exatamente ao fundo da janela */
-  width: 100%; /* Largura total da tela */
-  background: #1d3557; /* Cor de fundo escura */
-  color: #f1faee; /* Cor clara para o texto */
-  padding: 10px 0; /* Espaçamento interno vertical */
-  text-align: center; /* Centraliza o texto */
-  font-size: 14px; /* Tamanho da fonte */
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3); /* Sombra suave acima do rodapé */
+  text-align: center;
+  margin-top: 20px;
+  color: #457b9d;
 }
 
-/* Ícone de não confiança no rodapé */
-footer .trust-icon {
-  margin-left: 8px; /* Espaço entre o texto e o ícone */
-  font-size: 1.2em; /* Tamanho maior para destaque */
-}
 
+/* Não usa type="password" para ocultar a senha.
+ Não valida email ou senha antes de enviar.
+ Exibe alert com dados sensíveis.
+ Link de recuperação de senha quebrado.
+ Não utiliza autocomplete.*/
   

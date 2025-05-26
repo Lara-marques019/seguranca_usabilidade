@@ -1,20 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>EventFlow (Inseguro)</title>
-  <link rel="stylesheet" href="nseguro.style.css" />
-  <script src="nscript.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventFlow - Inseguro</title>
+  <link rel="stylesheet" href="nseguro.style.css">
+  <script src="nseguro.script.js" defer></script>
 </head>
 <body>
   <div class="container">
-    <h2>Login Inseguro</h2>
-    <form>
-      <label>Email:</label>
-      <input type="text" id="email" />
-      <label>Senha:</label>
-      <input type="text" id="senha" />
+    <h1>EventFlow</h1>
+    <p>Sua loja de eventos sem segurança adequada!</p>
+    
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="email">E-mail:</label>
+      <input type="text" id="email" name="email"> <!-- Não tem validação de e-mail -->
+
+      <label for="password">Senha:</label>
+      <input type="text" id="password" name="password"> <!-- Campo de senha visível -->
+
       <button type="submit">Entrar</button>
+      <p id="errorMsg"></p>
     </form>
+
+    <a href="#">Esqueceu a senha?</a> <!-- Link quebrado -->
   </div>
+
+
 </body>
 </html>
+
+<!-- Não usa type="password" para ocultar a senha.
+ Não valida email ou senha antes de enviar.
+ Exibe alert com dados sensíveis.
+ Link de recuperação de senha quebrado.
+ Não utiliza autocomplete.*/ -->

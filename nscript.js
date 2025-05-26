@@ -1,9 +1,15 @@
-// Seleciona o primeiro formulário na página
-document.querySelector('form').addEventListener('submit', function(e) {
-  // Impede o envio padrão do formulário
-  e.preventDefault();
+const loginForm = document.getElementById('loginForm');
 
-  // Exibe um alerta informando que ocorreu um erro de login
-  alert("Erro de login.");
+loginForm.addEventListener('submit', function(event) {
+  // Não impede envio
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  // Não valida se os campos estão preenchidos corretamente
+  alert('Login enviado com: ' + email + ' e senha: ' + password);
+
+  // Mensagem fixa
+  document.getElementById('errorMsg').textContent = 'Login enviado (sem segurança)!';
 });
+
   
