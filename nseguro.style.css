@@ -55,9 +55,4 @@ footer {
 }
 
 
-/* Não usa type="password" para ocultar a senha.
- Não valida email ou senha antes de enviar.
- Exibe alert com dados sensíveis.
- Link de recuperação de senha quebrado.
- Não utiliza autocomplete.*/
   
