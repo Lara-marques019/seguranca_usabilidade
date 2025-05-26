@@ -1,16 +1,45 @@
+/* Estilizando o corpo da página */
 body {
-    font-family: sans-serif;
-    padding: 20px;
-  }
-  
-  .container {
-    border: 1px solid black;
-    padding: 20px;
-    width: 300px;
-  }
-  
-  input {
-    display: block;
-    margin-bottom: 10px;
-  }
+  font-family: sans-serif; /* Fonte simples e legível */
+  display: flex; /* Usa Flexbox para o layout */
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+  padding: 20px; /* Espaçamento interno em torno do conteúdo */
+  background-color: #f4f4f4; /* Fundo claro e neutro */
+}
+
+/* Contêiner principal */
+.container {
+  flex: 1; /* Permite que o container cresça e ocupe o espaço disponível */
+  border: 1px solid black; /* Borda preta simples para definição visual */
+  padding: 20px; /* Espaçamento interno */
+  width: 300px; /* Largura fixa para consistência */
+  margin-bottom: 20px; /* Espaço abaixo do container para o rodapé */
+}
+
+/* Estilizando os campos de entrada */
+input {
+  display: block; /* Faz com que o input ocupe a linha inteira */
+  margin-bottom: 10px; /* Espaçamento abaixo dos inputs */
+}
+
+/* Estilizando o rodapé */
+footer {
+  position: fixed; /* Fixa o rodapé na parte inferior da tela */
+  bottom: 0; /* Alinha o rodapé exatamente ao fundo da janela */
+  width: 100%; /* Largura total da tela */
+  background: #1d3557; /* Cor de fundo escura */
+  color: #f1faee; /* Cor clara para o texto */
+  padding: 10px 0; /* Espaçamento interno vertical */
+  text-align: center; /* Centraliza o texto */
+  font-size: 14px; /* Tamanho da fonte */
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3); /* Sombra suave acima do rodapé */
+}
+
+/* Ícone de não confiança no rodapé */
+footer .trust-icon {
+  margin-left: 8px; /* Espaço entre o texto e o ícone */
+  font-size: 1.2em; /* Tamanho maior para destaque */
+}
+
   

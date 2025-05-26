@@ -1,124 +1,138 @@
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1d3557, #457b9d);
-    color: #f1faee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    position: relative;
-  }
-  
-  .container {
-    background-color: #ffffff;
-    color: #1d3557;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    width: 350px;
-    text-align: center;
-    animation: fadeIn 0.8s ease-in-out;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  h1 {
-    color: #1d3557;
-    font-size: 26px;
-    margin-bottom: 5px;
-  }
-  
-  h2 {
-    color: #457b9d;
-    margin-top: 10px;
-  }
-  
-  form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
-  
-  label {
-    margin: 12px 0 5px;
-    font-weight: 600;
-  }
-  
-  input {
-    padding: 10px;
-    border: 2px solid #a8dadc;
-    border-radius: 6px;
-    font-size: 14px;
-    outline: none;
-    transition: border 0.3s ease;
-  }
-  
-  input:focus {
-    border-color: #457b9d;
-  }
-  
-  button {
-    margin-top: 20px;
-    padding: 12px;
-    background: #1d3557;
-    color: #f1faee;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  button:hover {
-    background: #e63946;
-  }
-  
-  p#errorMsg, #recoveryMsg {
-    color: #e63946;
-    font-size: 0.9em;
-    margin-top: 10px;
-  }
-  
-  a {
-    display: block;
-    margin-top: 15px;
-    color: #1d3557;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Rodapé */
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: #1d3557;
-    color: #f1faee;
-    padding: 10px 0;
-    text-align: center;
-    font-size: 14px;
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
-  }
-  
-  footer .trust-icon {
-    margin-left: 8px;
-    font-size: 1.2em;
-    color: #2ecc71;
-  }
-  
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimentos padrão */
+  box-sizing: border-box;  /* Inclui bordas e preenchimentos no cálculo de largura e altura */
+}
+
+/* Estilos gerais do corpo da página */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte do corpo */
+  background: linear-gradient(135deg, #1d3557, #457b9d); /* Define um gradiente de fundo */
+  color: #f1faee; /* Define a cor do texto */
+  display: flex; /* Utiliza Flexbox para layout */
+  justify-content: center; /* Alinha horizontalmente ao centro */
+  align-items: center; /* Alinha verticalmente ao centro */
+  height: 100vh; /* Define a altura da tela */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  position: relative; /* Define o posicionamento relativo */
+}
+
+/* Estilos para o container principal */
+.container {
+  background-color: #ffffff; /* Cor de fundo branca */
+  color: #1d3557; /* Cor do texto */
+  padding: 30px; /* Espaçamento interno */
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  width: 350px; /* Largura fixa */
+  text-align: center; /* Alinha o texto ao centro */
+  animation: fadeIn 0.8s ease-in-out; /* Animação de entrada suave */
+}
+
+/* Definição da animação fadeIn */
+@keyframes fadeIn {
+  from { opacity: 0; /* Começa invisível */ transform: translateY(-20px); /* Começa deslocado para cima */}
+  to { opacity: 1; /* Torna-se totalmente visível */ transform: translateY(0); /* Retorna à posição original */ }
+}
+
+/* Estilos para o título principal */
+h1 {
+color: #1d3557; /* Cor do título */
+font-size: 26px; /* Tamanho da fonte */
+margin-bottom: 5px; /* Espaçamento inferior */
+}
+
+/* Estilos para o subtítulo */
+h2 {
+color: #457b9d; /* Cor do subtítulo */
+margin-top: 10px; /* Espaçamento superior */
+}
+
+/* Estilos para o formulário */
+form {
+margin-top: 20px; /* Espaçamento superior */
+display: flex; /* Utiliza Flexbox */
+flex-direction: column; /* Organiza os elementos em coluna */
+text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estilos para os rótulos dos campos */
+label {
+margin: 12px 0 5px; /* Espaçamento */
+font-weight: 600; /* Negrito */
+}
+
+/* Estilos para os campos de entrada */
+input {
+padding: 10px; /* Espaçamento interno */
+border: 2px solid #a8dadc; /* Borda suave */
+border-radius: 6px; /* Bordas arredondadas */
+font-size: 14px; /* Tamanho da fonte */
+outline: none; /* Remove o contorno padrão */
+transition: border 0.3s ease; /* Transição suave para a borda */
+}
+
+/* Estilos para o foco nos campos de entrada */
+input:focus {
+border-color: #457b9d; /* Muda a cor da borda ao focar */
+}
+
+/* Estilos para o botão */
+button {
+margin-top: 20px; /* Espaçamento superior */
+padding: 12px; /* Espaçamento interno */
+background: #1d3557; /* Cor de fundo */
+color: #f1faee; /* Cor do texto */
+font-weight: bold; /* Negrito */
+border: none; /* Remove a borda */
+border-radius: 6px; /* Bordas arredondadas */
+cursor: pointer; /* Cursor de mãozinha */
+transition: background 0.3s ease; /* Transição suave para o fundo */
+}
+
+/* Estilos para o botão ao passar o mouse */
+button:hover {
+background: #e63946; /* Muda a cor de fundo */
+}
+
+/* Estilos para mensagens de erro ou recuperação */
+p#errorMsg,
+#recoveryMsg {
+color: #e63946; /* Cor vermelha */
+font-size: 0.9em; /* Tamanho da fonte */
+margin-top: 10px; /* Espaçamento superior */
+}
+
+/* Estilos para os links */
+a {
+display: block; /* Exibe como bloco */
+margin-top: 15px; /* Espaçamento superior */
+color: #1d3557; /* Cor do texto */
+text-decoration: none; /* Remove o sublinhado */
+font-weight: bold; /* Negrito */
+}
+
+/* Estilos para os links ao passar o mouse */
+a:hover {
+text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+footer {
+position: fixed; /* Fixa na parte inferior */
+bottom: 0; /* Alinha ao fundo */
+width: 100%; /* Largura total */
+background: #1d3557; /* Cor de fundo */
+color: #f1faee; /* Cor do texto */
+padding: 10px 0; /* Espaçamento */
+text-align: center; /* Alinha o texto ao centro */
+font-size: 14px; /* Tamanho da fonte */
+box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3); /* Sombra superior */
+}
+
+/* Estilos para o ícone de confiança no rodapé */
+footer .trust-icon {
+margin-left: 8px; /* Espaçamento à esquerda */
+font-size: 1.2em; /* Tamanho da fonte */
+}
